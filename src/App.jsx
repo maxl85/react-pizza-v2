@@ -24,7 +24,14 @@ function App() {
                         {
                             /* <PizzaBlock title="Мексиканская" price={500} /> */
                             pizzas.map((obj) => (
-                                <PizzaBlock name={obj.name} price={obj.price} imageUrl={obj.imageUrl} />
+                                <PizzaBlock
+                                    // name={obj.name}
+                                    // price={obj.price}
+                                    // imageUrl={obj.imageUrl}
+                                    // sizes={obj.sizes}
+                                    // types={obj.types}
+                                    {...obj}
+                                    />
                             ))
                         }
                     </div>
