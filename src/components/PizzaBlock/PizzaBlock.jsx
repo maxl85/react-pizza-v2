@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 function PizzaBlock({ name, price, imageUrl, sizes, types }) {
     const [activeType, setActiveType] = useState(0);
